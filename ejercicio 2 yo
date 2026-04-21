@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main ()
+{
+  int uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, cont = 0, suma = 0, media = 0;
+  printf("ingrese 10 numeros enteros positivos\n");
+  scanf("%d %d %d %d %d %d %d %d %d %d", &uno, &dos, &tres, &cuatro, &cinco, &seis, &siete, &ocho, &nueve, &diez); 
+  suma = uno + dos + tres + cuatro + cinco + seis + siete + ocho + nueve + diez;
+  printf("La suma es: %d\n", suma);
+  media = suma / 10;
+  printf("La media es: %d\n", media);
+  return 0;
+}
