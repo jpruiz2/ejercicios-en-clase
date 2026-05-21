@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+  int boleta[4];
+  int calificacion, indice = 1;
+  printf("Ingrese calificacion a su boleta: \n");
+  while ( indice < 5 )
+  {
+    printf("Calificacion %d:", indice);
+    scanf( "%d", &calificacion);
+    boleta[indice] = calificacion;
+    indice ++;
+  }
+  indice = indice - 4;
+  printf("Tus calificaciones guardadas son: \n");
+  while (indice < 5)
+  {
+    printf("Calificacion %d: %d \n", indice, boleta[indice]);
+    indice ++;
+  }
+  return 0;
+}
